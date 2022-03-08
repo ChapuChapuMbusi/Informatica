@@ -8,27 +8,31 @@
 </head>
 <body>
     <form action="registrazione.php" method="POST">
-        <input type="email" name="email" class="form-email"><label class="form-label">email</label><br>
         <input type="text" name="name" class="form-text"><label class="form-label">name</label><br>
         <input type="text" name="surname" class="form-text"><label class="form-label">surname</label><br>
         <br>
-        <label>origin continent:</label><br>
-        <input type="radio" name="continent" value="europe"><label class="form-label">europe</label><br>
-        <input type="radio" name="continent" value="africa"><label class="form-label">africa</label><br>
-        <input type="radio" name="continent" value="asia"><label class="form-label">asia</label><br>
-        <input type="radio"  name="continent" value="america"><label class="form-label">america</label><br>
-        <input type="radio"  name="continent" value="oceania"><label class="form-label">oceania</label><br>
+        <label>contract type</label><br>
+        <input type="radio" name="ct" value="full"><label class="form-label">full-time</label><br>
+        <input type="radio" name="ct" value="half"><label class="form-label">half-time</label><br>
         
         <br>
-        <label>chose your sex</label>
-        <select id="sex" name="sex">
-            <option value="male">male</option>
-            <option value="female">female</option>
-            <option value="other">other</option>
+        <label>chose your contract category</label>
+        <select id="sex" name="cat">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="C">C</option>
         </select>
-        <br>
-        <input type="checkbox" name="subscribe" value="subscribed"> 
-        	<label>  subscribe to newsletter</label><br>
+        <br><br>
+        <label> Your work-days </label><br>
+        <input type="checkbox" name="weekday" value="Monday"><label for="">Monday</label><br>
+        <input type="checkbox" name="weekday" value="Tuesday"><label for="">Tuesday</label><br>
+        <input type="checkbox" name="weekday" value="Wednesday"><label for="">Wednesday</label><br>
+        <input type="checkbox" name="weekday" value="Thursday"><label for="">Thursday</label><br>
+        <input type="checkbox" name="weekday" value="Friday"><label for="">Friday</label><br>
+        <input type="checkbox" name="weekday" value="Saturday"> <label for="">Saturday</label><br>
+        	<br>
         <input type="submit" name="submit" class="submit">
         
     </form>
