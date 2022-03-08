@@ -8,8 +8,8 @@ $weekdays = ($_POST['weekdays'])? $_POST['weekdays']: array();
 print ("Dati inseriti:</br>");
 print ("Nome: $nome</br>");
 print ("Cognome: $cognome</br>");
-print ("Origine: $continent<br>");
-print ("Genere: $genere</br>");
+print ("Origine: $type<br>");
+print ("Genere: $category</br>");
 foreach($weekdays as $wd){
   print ( $wd "<br>");
 }
